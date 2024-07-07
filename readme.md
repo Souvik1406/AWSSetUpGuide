@@ -1,6 +1,3 @@
-Certainly! Here's a Markdown format for setting up AWS S3 buckets for CloudTrail logs and configuring CloudWatch Logs to export logs to S3:
-
-```markdown
 # Setting Up AWS S3 Buckets for CloudTrail Logs and CloudWatch Logs Export
 
 ## Step 1: Setting Up S3 Bucket for CloudTrail Logs
