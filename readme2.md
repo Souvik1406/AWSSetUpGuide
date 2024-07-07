@@ -1,6 +1,4 @@
-Certainly! Below is a Markdown file that includes instructions for setting up AWS with S3 bucket, CloudTrail, and CloudWatch, along with the necessary JSON configurations:
 
-```markdown
 # AWS Setup Guide with S3 Bucket, CloudTrail, and CloudWatch
 
 ## Step 1: Setting Up S3 Bucket for CloudTrail Logs
@@ -20,9 +18,7 @@ Certainly! Below is a Markdown file that includes instructions for setting up AW
         {
             "Sid": "AWSCloudTrailAclCheck",
             "Effect": "Allow",
-            "Principal": {
-                "Service": "cloudtrail.amazonaws.com"
-            },
+            "Service": "cloudtrail.amazonaws.com"
             "Action": "s3:GetBucketAcl",
             "Resource": "arn:aws:s3:::my-cloudtrail-logs-bucket"
         },
