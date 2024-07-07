@@ -17,18 +17,14 @@
         {
             "Sid": "AWSCloudTrailAclCheck",
             "Effect": "Allow",
-            "Principal": {
-                "Service": "cloudtrail.amazonaws.com"
-            },
+            "Service": "cloudtrail.amazonaws.com"
             "Action": "s3:GetBucketAcl",
             "Resource": "arn:aws:s3:::my-cloudtrail-logs-bucket"
         },
         {
             "Sid": "AWSCloudTrailWrite",
             "Effect": "Allow",
-            "Principal": {
-                "Service": "cloudtrail.amazonaws.com"
-            },
+            "Service": "cloudtrail.amazonaws.com"
             "Action": "s3:PutObject",
             "Resource": "arn:aws:s3:::my-cloudtrail-logs-bucket/AWSLogs/<YourAccountID>/*",
             "Condition": {
